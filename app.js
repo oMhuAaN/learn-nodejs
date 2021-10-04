@@ -18,6 +18,15 @@
 
 
 // 用递归的方式计算1到100的和
-function aa(){
-  
+function aa() {
+
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('xxxcccxcxcx')
+    }, 1000)
+  })
 }
+
+(async function () {
+  console.log(await aa())
+})()
